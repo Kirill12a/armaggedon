@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33AD725075E0BA87A2FCAEF2 /* Pods_armaggedon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D930315756ABB7D77AF269DA /* Pods_armaggedon.framework */; };
 		D2E6EC60280F30FC002C8EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */; };
 		D2E6EC62280F30FC002C8EDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */; };
 		D2E6EC64280F30FC002C8EDD /* MeteoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8FA63BD1F8A3F2F67726B3D /* Pods-armaggedon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armaggedon.debug.xcconfig"; path = "Target Support Files/Pods-armaggedon/Pods-armaggedon.debug.xcconfig"; sourceTree = "<group>"; };
+		D0DB5EA38812345C753FF916 /* Pods-armaggedon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armaggedon.release.xcconfig"; path = "Target Support Files/Pods-armaggedon/Pods-armaggedon.release.xcconfig"; sourceTree = "<group>"; };
 		D2E6EC5C280F30FC002C8EDD /* armaggedon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = armaggedon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -23,6 +26,7 @@
 		D2E6EC6B280F30FD002C8EDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2E6EC6D280F30FD002C8EDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2E6EC73280F3F3A002C8EDD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D930315756ABB7D77AF269DA /* Pods_armaggedon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_armaggedon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,18 +34,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33AD725075E0BA87A2FCAEF2 /* Pods_armaggedon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D71473C45BAE176D3ECAB53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8FA63BD1F8A3F2F67726B3D /* Pods-armaggedon.debug.xcconfig */,
+				D0DB5EA38812345C753FF916 /* Pods-armaggedon.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		861E43133AAF069507F7C0D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D930315756ABB7D77AF269DA /* Pods_armaggedon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2E6EC53280F30FC002C8EDD = {
 			isa = PBXGroup;
 			children = (
 				D2E6EC73280F3F3A002C8EDD /* README.md */,
 				D2E6EC5E280F30FC002C8EDD /* armaggedon */,
 				D2E6EC5D280F30FC002C8EDD /* Products */,
+				2D71473C45BAE176D3ECAB53 /* Pods */,
+				861E43133AAF069507F7C0D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2E6EC70280F30FD002C8EDD /* Build configuration list for PBXNativeTarget "armaggedon" */;
 			buildPhases = (
+				1A8F0BDE70B642B75F2F89B1 /* [CP] Check Pods Manifest.lock */,
 				D2E6EC58280F30FC002C8EDD /* Sources */,
 				D2E6EC59280F30FC002C8EDD /* Frameworks */,
 				D2E6EC5A280F30FC002C8EDD /* Resources */,
+				B5730DE24B3AB8A79E3B938A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A8F0BDE70B642B75F2F89B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-armaggedon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5730DE24B3AB8A79E3B938A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-armaggedon/Pods-armaggedon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-armaggedon/Pods-armaggedon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-armaggedon/Pods-armaggedon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2E6EC58280F30FC002C8EDD /* Sources */ = {
@@ -272,6 +341,7 @@
 		};
 		D2E6EC71280F30FD002C8EDD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8FA63BD1F8A3F2F67726B3D /* Pods-armaggedon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +369,7 @@
 		};
 		D2E6EC72280F30FD002C8EDD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DB5EA38812345C753FF916 /* Pods-armaggedon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
