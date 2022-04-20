@@ -6,10 +6,7 @@
 //
 
 import UIKit
-import SnapKit
-import Realm
-import RealmSwift
-import MachO
+
 
 
 class MeteoritesViewController: UIViewController {
