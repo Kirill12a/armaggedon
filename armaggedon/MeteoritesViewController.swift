@@ -14,15 +14,6 @@ class MeteoritesViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .red
-    MeteoritesViewController.HI()
-    MeteoritesViewController.HI()
-
-    MeteoritesViewController.HI()
-    MeteoritesViewController.HI()
-    MeteoritesViewController.HI()
-    MeteoritesViewController.HI()
-
-
   }
   class func HI(){
     print("Hello")
