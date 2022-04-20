@@ -18,6 +18,9 @@ class MeteoritesViewController: UIViewController {
     MeteoritesViewController.HI()
 
     MeteoritesViewController.HI()
+    MeteoritesViewController.HI()
+    MeteoritesViewController.HI()
+    MeteoritesViewController.HI()
 
 
   }
