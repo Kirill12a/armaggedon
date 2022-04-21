@@ -11,6 +11,7 @@
 		D28786F52811DB28006CB00B /* MeteoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786F42811DB28006CB00B /* MeteoritesScreen.swift */; };
 		D28786F82811DDEB006CB00B /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786F72811DDEB006CB00B /* URL.swift */; };
 		D28786FA2811EC4D006CB00B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786F92811EC4D006CB00B /* TabBarController.swift */; };
+		D28786FC2811F0C9006CB00B /* TrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786FB2811F0C9006CB00B /* TrashViewController.swift */; };
 		D2E6EC60280F30FC002C8EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */; };
 		D2E6EC62280F30FC002C8EDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */; };
 		D2E6EC64280F30FC002C8EDD /* MeteoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */; };
@@ -24,6 +25,7 @@
 		D28786F42811DB28006CB00B /* MeteoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoritesScreen.swift; sourceTree = "<group>"; };
 		D28786F72811DDEB006CB00B /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		D28786F92811EC4D006CB00B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D28786FB2811F0C9006CB00B /* TrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashViewController.swift; sourceTree = "<group>"; };
 		D2E6EC5C280F30FC002C8EDD /* armaggedon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = armaggedon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +69,9 @@
 		D28786F02811DAA2006CB00B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */,
 				D28786F92811EC4D006CB00B /* TabBarController.swift */,
+				D28786FB2811F0C9006CB00B /* TrashViewController.swift */,
+				D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28786F82811DDEB006CB00B /* URL.swift in Sources */,
+				D28786FC2811F0C9006CB00B /* TrashViewController.swift in Sources */,
 				D2E6EC64280F30FC002C8EDD /* MeteoritesViewController.swift in Sources */,
 				D2E6EC60280F30FC002C8EDD /* AppDelegate.swift in Sources */,
 				D28786FA2811EC4D006CB00B /* TabBarController.swift in Sources */,

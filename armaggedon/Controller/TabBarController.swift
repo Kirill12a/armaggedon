@@ -15,10 +15,11 @@ class TabBarController: UITabBarController {
     super.viewDidLoad()
 
     let meteorVC         =     MeteoritesViewController()
+    let trashVC          =     TrashViewController()
 
     viewControllers = [
-      setUpNavigationController(title: "Преподы", image: UIImage(systemName: "person.3.sequence"), rootViewController: meteorVC),
-      setUpNavigationController(title: "Расписание", image: UIImage(systemName: "tablecells"), rootViewController: meteorVC)    ]
+      setUpNavigationController(title: "Астероиды", image: UIImage(systemName: "network"), rootViewController: meteorVC),
+      setUpNavigationController(title: "Уничтожение", image: UIImage(systemName: "trash"), rootViewController: trashVC)    ]
   }
 
   private func setUpNavigationController(title: String, image: UIImage?, rootViewController: UIViewController) -> UIViewController {
