@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		33AD725075E0BA87A2FCAEF2 /* Pods_armaggedon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D930315756ABB7D77AF269DA /* Pods_armaggedon.framework */; };
+		D28786F52811DB28006CB00B /* MeteoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786F42811DB28006CB00B /* MeteoritesScreen.swift */; };
+		D28786F82811DDEB006CB00B /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786F72811DDEB006CB00B /* URL.swift */; };
+		D28786FA2811EC4D006CB00B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28786F92811EC4D006CB00B /* TabBarController.swift */; };
 		D2E6EC60280F30FC002C8EDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */; };
 		D2E6EC62280F30FC002C8EDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */; };
 		D2E6EC64280F30FC002C8EDD /* MeteoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		B8FA63BD1F8A3F2F67726B3D /* Pods-armaggedon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armaggedon.debug.xcconfig"; path = "Target Support Files/Pods-armaggedon/Pods-armaggedon.debug.xcconfig"; sourceTree = "<group>"; };
 		D0DB5EA38812345C753FF916 /* Pods-armaggedon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-armaggedon.release.xcconfig"; path = "Target Support Files/Pods-armaggedon/Pods-armaggedon.release.xcconfig"; sourceTree = "<group>"; };
+		D28786F42811DB28006CB00B /* MeteoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoritesScreen.swift; sourceTree = "<group>"; };
+		D28786F72811DDEB006CB00B /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		D28786F92811EC4D006CB00B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D2E6EC5C280F30FC002C8EDD /* armaggedon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = armaggedon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +53,6 @@
 				B8FA63BD1F8A3F2F67726B3D /* Pods-armaggedon.debug.xcconfig */,
 				D0DB5EA38812345C753FF916 /* Pods-armaggedon.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -57,6 +62,46 @@
 				D930315756ABB7D77AF269DA /* Pods_armaggedon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D28786F02811DAA2006CB00B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */,
+				D28786F92811EC4D006CB00B /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D28786F12811DAAF006CB00B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D28786F32811DABE006CB00B /* MeteroitesView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D28786F22811DAB1006CB00B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D28786F32811DABE006CB00B /* MeteroitesView */ = {
+			isa = PBXGroup;
+			children = (
+				D28786F42811DB28006CB00B /* MeteoritesScreen.swift */,
+			);
+			path = MeteroitesView;
+			sourceTree = "<group>";
+		};
+		D28786F62811DDDF006CB00B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D28786F72811DDEB006CB00B /* URL.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D2E6EC53280F30FC002C8EDD = {
@@ -81,9 +126,12 @@
 		D2E6EC5E280F30FC002C8EDD /* armaggedon */ = {
 			isa = PBXGroup;
 			children = (
+				D28786F62811DDDF006CB00B /* Helpers */,
+				D28786F22811DAB1006CB00B /* Model */,
+				D28786F12811DAAF006CB00B /* View */,
+				D28786F02811DAA2006CB00B /* Controller */,
 				D2E6EC5F280F30FC002C8EDD /* AppDelegate.swift */,
 				D2E6EC61280F30FC002C8EDD /* SceneDelegate.swift */,
-				D2E6EC63280F30FC002C8EDD /* MeteoritesViewController.swift */,
 				D2E6EC68280F30FD002C8EDD /* Assets.xcassets */,
 				D2E6EC6A280F30FD002C8EDD /* LaunchScreen.storyboard */,
 				D2E6EC6D280F30FD002C8EDD /* Info.plist */,
@@ -205,8 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D28786F82811DDEB006CB00B /* URL.swift in Sources */,
 				D2E6EC64280F30FC002C8EDD /* MeteoritesViewController.swift in Sources */,
 				D2E6EC60280F30FC002C8EDD /* AppDelegate.swift in Sources */,
+				D28786FA2811EC4D006CB00B /* TabBarController.swift in Sources */,
+				D28786F52811DB28006CB00B /* MeteoritesScreen.swift in Sources */,
 				D2E6EC62280F30FC002C8EDD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
